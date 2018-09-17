@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +26,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    pages/ilcorsaronero/ilcorsaronero.cpp \
+    pages/abstractpage.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    pages/ilcorsaronero/ilcorsaronero.h \
+    pages/abstractpage.h
 
 FORMS += \
         mainwindow.ui
+
+DISTFILES += \
+    pages/pages.pri
